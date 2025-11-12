@@ -62,6 +62,35 @@ h6 {
 
 /* End of CSS Reset */
 
+:root {
+  --main-black-bg: rgba(0, 0, 0, 0.432);
+  --main-white-text: white;
+  --main-gold-bg: #f5ca5de6;
+}
+
+body {
+  background: no-repeat center/100% url('./images/jolly-roger.jpg');
+  color: var(--main-white-text);
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  background-color: var(--main-black-bg);
+}
+
+header nav {
+  display: flex;
+  gap: 2rem;
+}
+
+header nav button {
+  background-color: var(--main-gold-bg);
+  color: var(--main-white-text);
+  border-radius: 1rem;
+  padding: 0.5rem 1rem;
+}
+
 img {
   height: 350px;
   width: 350px;
