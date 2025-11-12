@@ -17,13 +17,15 @@ const contacts = [
     name: 'Poop Deckhand Jimmy Bob',
     title: 'Poop Deckhand',
     phone: '555-555-5552',
-    email: 'poopdeckhandjimmybob@argh.com',
+    email: 'poopdeckjimmybob@argh.com',
   },
 ];
 
 function loadContacts() {
   const content = document.querySelector('#content');
   content.textContent = '';
+  const mainDiv = document.createElement('div');
+  mainDiv.classList.add('contact');
   for (const contact of contacts) {
     const div = document.createElement('div');
     div.classList.add('contact-item');
@@ -43,8 +45,9 @@ function loadContacts() {
     div.appendChild(p1);
     div.appendChild(p2);
     div.appendChild(p3);
-    content.appendChild(div);
+    mainDiv.appendChild(div);
   }
+  content.appendChild(mainDiv);
 }
 
 export { loadContacts };

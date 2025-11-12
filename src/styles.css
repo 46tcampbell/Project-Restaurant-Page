@@ -71,6 +71,7 @@ h6 {
 body {
   background: no-repeat center/100% url('./images/jolly-roger.jpg');
   color: var(--main-white-text);
+  font-family: system-ui, sans-serif;
 }
 
 header {
@@ -89,6 +90,7 @@ header nav button {
   color: var(--main-white-text);
   border-radius: 1rem;
   padding: 0.5rem 1rem;
+  cursor: pointer;
 }
 
 #content {

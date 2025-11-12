@@ -48,6 +48,8 @@ const menuItems = [
 function loadMenu() {
   const content = document.querySelector('#content');
   content.textContent = '';
+  const mainDiv = document.createElement('div');
+  mainDiv.classList.add('menu');
   for (const item of menuItems) {
     const div = document.createElement('div');
     div.classList.add('menu-item');
@@ -63,8 +65,9 @@ function loadMenu() {
     div.appendChild(h3);
     div.appendChild(p1);
     div.appendChild(p2);
-    content.appendChild(div);
+    mainDiv.appendChild(div);
   }
+  content.appendChild(mainDiv);
 }
 
 export { loadMenu };

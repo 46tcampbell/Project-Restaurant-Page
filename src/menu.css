@@ -1,0 +1,17 @@
+.menu {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 1rem;
+}
+
+.menu-item {
+  min-height: min-content;
+  padding: 1rem;
+  background-color: var(--main-gold-bg);
+  border-radius: 0.5rem;
+  display: grid;
+  border-left: 10px solid var(--main-white-text);
+  box-shadow: var(--main-box-shadow);
+  grid-template-rows: min-content 1fr min-content;
+  gap: 0.5rem;
+}
