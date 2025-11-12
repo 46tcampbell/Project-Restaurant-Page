@@ -2,6 +2,7 @@ import restaurantImage from './images/restaurant.jpg';
 
 function loadHomepage() {
   const content = document.querySelector('#content');
+  content.textContent = '';
   const img = document.createElement('img');
   img.src = restaurantImage;
   img.alt = 'Interior view of an empty fancy looking restaurant';

@@ -47,6 +47,7 @@ const menuItems = [
 
 function loadMenu() {
   const content = document.querySelector('#content');
+  content.textContent = '';
   for (const item of menuItems) {
     const div = document.createElement('div');
     div.classList.add('menu-item');
