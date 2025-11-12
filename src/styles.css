@@ -91,7 +91,14 @@ header nav button {
   padding: 0.5rem 1rem;
 }
 
+#content {
+  background-color: var(--main-black-bg);
+  display: block;
+  max-width: 80vw;
+  margin: 3rem auto 0;
+}
+
 img {
   height: 350px;
-  width: 350px;
+  width: 500px;
 }
